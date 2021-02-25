@@ -1,2 +1,2 @@
-# ds_search_bot
-Discord bot for searching information from Google (Python)
+WikiBot
+Discord bot for searching information from Wikipedia (Python)
