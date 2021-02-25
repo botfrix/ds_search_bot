@@ -13,7 +13,7 @@ client = commands.Bot(command_prefix = '!')
 owner_id = 383623196894822400
 chan_id = 813544820991197197
 
-token = 'ODEzNTQ1MTI0NTQxMjM1MjAx.YDQ28A.Rek0fTl9-BVP0Alw0l3AU8AVr48'
+token = ''
 
 @client.event
 async def on_ready():
@@ -26,7 +26,7 @@ def wiki_summary(arg):
     return definition
 
 @client.event
-async def on_message('wikipedia.com/' + message):
+async def on_message(message):
     words = message.content.split()
     important_words = words[1:]
 
