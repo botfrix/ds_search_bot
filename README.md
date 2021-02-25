@@ -1,2 +1,2 @@
-# ds_wiki_bot
+WikiBot
 Discord bot for searching information from Wikipedia (Python)
