@@ -13,7 +13,7 @@ client = commands.Bot(command_prefix = '!')
 owner_id = 383623196894822400
 chan_id = 813544820991197197
 
-token = ''
+token = ' '
 
 @client.event
 async def on_ready():
