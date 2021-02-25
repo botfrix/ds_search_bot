@@ -10,7 +10,7 @@ import wikipedia
 
 client = commands.Bot(command_prefix = '!')
 
-token = ' '
+token = ''
 
 @client.event
 async def on_ready():
