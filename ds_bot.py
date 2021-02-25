@@ -3,13 +3,11 @@ import datetime
 import discord
 import wikipedia
 from discord.ext import commands
+from config import token
 
 wikipedia.set_lang('ru')
 
 client = commands.Bot(command_prefix='!')
-
-token = 'ODEzNTQ1MTI0NTQxMjM1MjAx.YDQ28A.x-1IdrxurwkQgKA3MHKd31R_z8s'
-
 
 @client.event
 async def on_ready():
