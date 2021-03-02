@@ -1,5 +1,4 @@
 import datetime
-
 import discord
 import wikipedia
 from discord.ext import commands
@@ -7,7 +6,7 @@ from config import token
 
 wikipedia.set_lang('ru')
 
-client = commands.Bot(command_prefix='!')
+client = commands.Bot(command_prefix='@')
 
 @client.event
 async def on_ready():
@@ -23,15 +22,12 @@ def wiki_summary(arg):
 
 @client.event
 async def on_message(message):
-    words = message.content.split()
-    important_words = words[1:]
-
-    if message.content.startswith('!search'):
+    if message.content.startswith('@se'):
         words = message.content.split()
-        important_words = words[1:]
+        important_words = ' '.join(words[1:])
         search = discord.Embed(title='Successful search...', description=wiki_summary(important_words),
                                color=discord.Color.purple())
         await message.channel.send(content=None, embed=search)
 
-
 client.run(token)
+
