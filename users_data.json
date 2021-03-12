@@ -1,0 +1,22 @@
+{
+    "messages": [
+        {
+            "tag": "!s",
+            "user": "frix",
+            "command_text": "!s youtube",
+            "date": "12.03.21"
+        },
+        {
+            "tag": "!lang",
+            "user": "frix",
+            "command_text": "!lang ru",
+            "date": "12.03.21"
+        },
+        {
+            "tag": "!stop",
+            "user": "frix",
+            "command_text": "!stop",
+            "date": "12.03.21"
+        }
+    ]
+}
