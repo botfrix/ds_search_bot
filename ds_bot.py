@@ -13,7 +13,6 @@ data = {"messages": []}
 prefix = '!'
 client = commands.Bot(command_prefix=prefix)
 
-
 client.remove_command('help')
 
 
@@ -44,7 +43,7 @@ async def on_message(message):
 async def on_disconnect():
     time = datetime.datetime.now()
     print('WikiBot offline at {}'.format(time))
-    with open ('users_data.json', 'w') as file:
+    with open('users_data.json', 'w') as file:
         json.dump(data, file, cls=MyEncoder, indent=4)
 
 
